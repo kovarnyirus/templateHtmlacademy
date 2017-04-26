@@ -1,17 +1,44 @@
 .section-design{
   display: flex;
   flex-direction: row;
+
   &__left-column{
     width: 50%;
-    padding: 100px 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 147px;
     padding-top: 170px;
+    & h2{
+      margin-top: -8px;
+    }
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 40px;
+    letter-spacing: 0.6px;
   }
   &__right-column{
+    position: relative;
     width: 50%;
+    background-color:#ececec;
+    &::after{
+      content: "";
+      background: url(../img/Corporate_triangle.png) no-repeat;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      background-size: cover;
+    }
   }
 }
 .red-title{
-  font-style: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
   line-height: 50px;
   color: @pink-color;
+  margin: 0;
+  padding: 0;
 }

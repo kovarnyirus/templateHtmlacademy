@@ -1,0 +1,51 @@
+.description {
+  display: flex;
+
+  &__left-colum {
+    position: relative;
+    width: 51%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      background: url("../img/Corporate_triangle.png") no-repeat;
+      width: 140%;
+      height: 148%;
+      display: block;
+      transform: rotate(87deg);
+      position: absolute;
+      bottom: -20px;
+      left: -250px;
+      background-size: cover;
+    }
+    &::after {
+      content: "";
+      background: url("../img/macbook.png") no-repeat;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      bottom: -95px;
+      left: 55px;
+
+    }
+  }
+
+  &__right-colum {
+    width: 49%;
+    box-sizing: border-box;
+    padding-right: 200px;
+    padding-left: 3px;
+    padding-bottom: 128px;
+    padding-top: 125px;
+
+    & h2 {
+      padding-bottom: 13px;
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.7px;
+    line-height: 26px;
+  }
+}
