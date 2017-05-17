@@ -1,0 +1,27 @@
+.browser{
+  background-color: @grey-bg-color;
+  padding-top:100px;
+  padding-bottom:420px;
+  text-align: center;
+  position: relative;
+  &__wrapper{
+    width: 680px;
+    margin: 0 auto;
+    & p{
+      font-size:16px;
+      line-height: 26px;
+      letter-spacing: 0.9;
+      color:#6e6e6d ;
+    }
+  }
+}
+.browser::before{
+  content: '';
+  background: url("../img/browser.png") no-repeat;
+  width: 820px;
+  height:375px;
+  position: absolute;
+  bottom:0;
+  margin-left: -410px;
+  left:50%;
+}
